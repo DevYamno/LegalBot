@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RT Bot — Legal</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .landing {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 60px);
+      text-align: center;
+      padding: 2rem;
+      background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(88,101,242,.22) 0%, transparent 70%);
+    }
+    .landing h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin-bottom: .8rem; }
+    .landing h1 span {
+      background: linear-gradient(90deg, var(--accent-light), #eb459e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .landing p { color: var(--text-muted); max-width: 480px; margin-bottom: 2.5rem; }
+    .doc-cards {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .doc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem 2.5rem;
+      text-decoration: none;
+      color: var(--text);
+      width: 220px;
+      transition: border-color .2s, transform .2s;
+    }
+    .doc-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+    }
+    .doc-card .doc-icon { font-size: 2.5rem; margin-bottom: .8rem; }
+    .doc-card h2 { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+    .doc-card p { font-size: .82rem; color: var(--text-muted); margin: 0; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">
+    <div class="bot-avatar">RT</div>
+    RT Bot
+  </a>
+  <ul class="nav-links">
+    <li><a href="tos.html">Terms of Service</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="https://discord.gg/EWXWpBv35b" target="_blank" rel="noopener">Discord</a></li>
+  </ul>
+</nav>
+
+<div class="landing">
+  <div class="hero-badge">⚙️ Official Documents</div>
+  <h1>RT Bot — <span>Games Point</span></h1>
+  <p>Discord bot for game point systems, leaderboards, and player challenges. Select a document below.</p>
+  <div class="doc-cards">
+    <a class="doc-card" href="tos.html">
+      <div class="doc-icon">📜</div>
+      <h2>Terms of Service</h2>
+      <p>Rules and conditions for using RT Bot</p>
+    </a>
+    <a class="doc-card" href="privacy.html">
+      <div class="doc-icon">🔒</div>
+      <h2>Privacy Policy</h2>
+      <p>How we handle and protect your data</p>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 <strong>RT Bot</strong> — Discord Games Point Bot &nbsp;|&nbsp;
+    <a href="tos.html">Terms of Service</a> &nbsp;|&nbsp;
+    <a href="privacy.html">Privacy Policy</a>
+  </p>
+  <p style="margin-top:.5rem">Made with ❤️ for the Discord community</p>
+</footer>
+
+</body>
+</html>
